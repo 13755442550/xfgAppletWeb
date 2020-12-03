@@ -1,0 +1,33 @@
+<!--page/login.wxml-->
+<view class="content">
+  <!-- 全局背景 -->
+  <view class="bg" style="">
+    <view class="bg_view">
+      <!-- 小程序介绍标题 -->
+      <view class="title">
+        <text>MarryU小程序</text>
+        <text>新生代高端婚恋平台</text>
+      </view>
+      <!-- 小程序介绍信息 -->
+      <view class="info">
+        <view class="info_first">平均每周有1000多对用户成功脱单</view>
+        <view><view class="info_number">{{number}}</view>优质单身已注册登录</view>
+        <view class="info_last">在这里，你的认真不会被辜负</view>
+      </view>
+      <!-- 注册/登录按钮 -->
+      <view class="login_user">
+        <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="login_btn" size="default">
+          <view class="login_btn_info">注册/登录</view>
+        </button>
+      </view>
+      <!-- 底部协议 -->
+      <view class="agreement">
+        点击注册默认您同意
+        <navigator  url="../agreement/agreement" hover-class="navigator-hover">
+          《MarryU注册协议》
+        </navigator>
+      </view>
+    </view>
+  </view>
+  
+</view>

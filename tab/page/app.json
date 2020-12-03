@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "user/user",
+    "login/login",
+    "index/index",
+    "shop/shop",
+    "agreement/agreement"
+  ],
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#ffff00",
+    "list": [
+      {
+        "pagePath": "index/index",
+        "text": "首页",
+        "iconPath": "/images/1.png",
+        "selectedIconPath": "/images/1.png"
+      },
+      {
+        "pagePath": "shop/shop",
+        "text": "匹配",
+        "iconPath": "/images/2.png",
+        "selectedIconPath": "/images/2.png"
+      },
+      {
+        "pagePath": "shop/shop",
+        "text": "恋爱圈",
+        "iconPath": "/images/2.png",
+        "selectedIconPath": "/images/2.png"
+      },
+      {
+        "pagePath": "shop/shop",
+        "text": "消息",
+        "iconPath": "/images/2.png",
+        "selectedIconPath": "/images/2.png"
+      },
+      {
+        "pagePath": "user/user",
+        "text": "我的",
+        "iconPath": "/images/2.png",
+        "selectedIconPath": "/images/2.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui": true
+  }
+}

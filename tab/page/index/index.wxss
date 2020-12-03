@@ -1,0 +1,245 @@
+.content{
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Microsoft YaHei,Arial,Helvetica,sans-serif,SimSun";
+}
+/* 轮播样式 */
+.page-body{
+  width: 100%;
+}
+.page-body swiper{
+  height: 410rpx;
+}
+.page-body image{
+ width: 100%;
+}
+/* 置顶用户标题 */
+.top{
+  height: 60rpx;
+  padding: 10rpx 0px;
+  clear: both;
+}
+.top_title{
+  padding: 5rpx 0;
+  line-height: 50rpx;
+}
+.top_title_left{
+  font-weight: bold;
+  font-size: 36rpx;
+  padding-left: 20rpx;
+  float: left;
+}
+.top_title_right{
+  float: right;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 30rpx;
+  padding-right: 20rpx;
+}
+/* 置顶用户样式 */
+.top_user{
+  width: 712.5rpx;
+  margin: 0 auto 25rpx;
+  display: flex;
+  clear: both;
+}
+.top_user>navigator{
+  width: 220rpx;
+  float: left;
+  margin:7rpx;
+  border: 1px solid #c87d2f;
+  border-radius: 20rpx;
+  text-align: center;
+  position: relative;
+}
+.top_user_logo{
+  width: 150rpx;
+  height: 150rpx;
+  margin: 0 auto;
+  padding: 20rpx 0 10rpx;
+}
+.top_user_logo  image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.top_user_name{
+  font-size: 35rpx;
+}
+.top_user_age{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 26rpx;
+  padding: 10rpx 0 40rpx;
+}
+.top_user_attention{
+  color: #fff;
+  background-color: #c87d2f;
+  word-break: keep-all;
+  padding: 5rpx 10rpx;
+  border-radius: 20rpx;
+  font-size: 30rpx;
+  position: absolute;
+  bottom: -25rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* 推荐标题样式 */
+.recommend{
+  width: 95%;
+  margin: 0 auto;
+  padding: 20rpx 0;
+  height: 54rpx;
+}
+.recommend_border{
+  width: 35%;
+  height: 25rpx;
+  margin-top: 27rpx;
+  border-top: 2rpx solid rgba(0, 0, 0, 0.15);
+  float: left;
+}
+.recommend_text{
+  width: 30%;
+  font-size: 34rpx;
+  font-weight: 700;
+  text-align: center;
+  float: left;
+}
+/* 专区推荐信息 */
+.area_recommend{
+  width: 100%;
+  height: 150rpx;
+  margin-left: 20rpx;
+}
+.area_recommend_scroll{
+  width: 100%;
+  height: 150rpx;
+  white-space: nowrap;
+}
+.area_recommend_navigator{
+  width: 270rpx;
+  height: 150rpx;
+  padding-right: 20rpx;
+  border-radius: 20rpx;
+  display: inline-block;
+}
+.area_recommend_item{
+  position: relative;
+}
+.area_recommend_text{
+  width: 100%;
+  height: 150rpx;
+  line-height: 150rpx;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.15);
+  position: absolute;
+  text-align: center;
+  border-radius: 20rpx;
+}
+.area_recommend_scroll image{
+  width: 270rpx;
+  height: 150rpx;
+  border-radius: 20rpx;
+}
+.page_recommend{
+  width: 712.5rpx;
+  margin: 0 auto 25rpx;
+  clear: both;
+}
+.page_recommend_item{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+  box-shadow: 0 6rpx 6rpx rgba(0, 0, 0, 0.15);
+  border-radius: 20rpx;
+}
+.page_recommend_top{
+  position: relative;
+  width: 100%;
+  height: 500rpx;
+  border-radius: 20rpx;
+}
+.page_recommend_auth{
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #fff;
+  padding: 10rpx 15rpx;
+  border-radius: 30rpx;
+  font-size: 30rpx;
+  line-height: 30rpx;
+}
+.page_recommend_image{
+  width: 100%;
+  height: 500rpx;
+}
+.page_recommend_image >image {
+  width: 100%;
+  height: 500rpx;
+}
+.page_recommend_wx{
+  position: absolute;
+  bottom: 20rpx;
+  right: 20rpx;
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #fff;
+  padding: 10rpx 15rpx;
+  border-radius: 30rpx;
+  font-size: 30rpx;
+  line-height: 30rpx;
+}
+.page_recommend_line{
+  clear: both;
+  width: 640rpx;
+  margin: 0 auto;
+  padding: 20rpx 0 0rpx;
+}
+.page_recommend_name{
+  font-size: 44rpx;
+  float: left;
+}
+.page_recommend_expectation{
+  font-size: 28rpx;
+  float: right;
+  color: #c87d2f;
+  line-height: 70rpx;
+}
+.page_recommend_title{
+  float: left;
+  height: 42rpx;
+}
+.page_recommend_title_item{
+  margin-right: 20rpx;
+  text-align: center;
+  height: 42rpx;
+  line-height: 42rpx;
+  float: left;
+  font-size: 24rpx;
+  letter-spacing: 2rpx;
+  padding: 2rpx 10rpx;
+  border-radius: 28rpx;
+  color: rgb(153, 80, 1);
+  background-color: #f8b976;
+}
+.page_recommend_city{
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.3);
+  float: right;
+}
+.page_recommend_info{
+  width: 560rpx;
+  font-size: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  float: left;
+  padding-bottom: 20rpx;
+}
+.text_line{
+  white-space: nowrap;
+}
+.page_recommend_infobtn{
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  color: blue;
+  float: left;
+}

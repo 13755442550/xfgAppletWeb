@@ -1,0 +1,125 @@
+/* page/user.wxss */
+.manage_head {
+  position: relative;
+  overflow: hidden;
+  background: #FFF;
+}
+
+.head_user {
+  margin: 90rpx 50rpx;
+  position: relative;
+  min-height: 140rpx;
+  color: #FFF;
+}
+
+/* 头像样式 */
+.avatar {
+  width: 140rpx;
+  height: 140rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 100%;
+  border: 2rpx solid #FFF;
+  overflow: hidden;
+}
+
+.avatar>navigator,
+.avatar>image {
+  width: 100%;
+  height: 100%;
+}
+
+.array_check_3 {
+  color: #F60;
+}
+
+/* 头像右边样式 */
+.info {
+  padding-left: 160rpx;
+}
+
+.info>navigator {
+  height: 60rpx;
+  line-height: 60rpx;
+  word-spacing: normal;
+}
+
+.nickname {
+  height: 60rpx;
+  font-size: 40rpx;
+  color: #333;
+  word-spacing: normal;
+}
+
+.nickname_info {
+  overflow: hidden;
+  display: inline-block;
+  max-width: 360rpx;
+  text-overflow: ellipsis;
+}
+
+.info_sex {
+  vertical-align: top;
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.info_sex>image {
+  width: 40rpx;
+  height: 100%;
+}
+
+.nickname>text {
+  vertical-align: top;
+  font-size: 24rpx;
+  line-height: 70rpx;
+  display: inline-block;
+}
+
+.authbox,
+.authbox>navigator {
+  height: 34rpx;
+}
+
+.auth_icon {
+  width: 46rpx;
+  height: 34rpx;
+  display: inline-block;
+  border-radius: 100%;
+}
+
+.auth_icon>image {
+  width: 34rpx;
+  height: 34rpx;
+  border-radius: 100%;
+}
+
+.signature {
+  overflow: hidden;
+  width: 490rpx;
+  font-size: 24rpx;
+  line-height: 30rpx;
+  color: #999;
+  word-spacing: normal;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+/* 我要当媒婆样式 */
+.switch {
+  position: absolute;
+  top: 40rpx;
+  right: 0;
+  background-color: #f149a2;
+  height: 52rpx;
+  line-height: 52rpx;
+  border-top-left-radius: 26rpx;
+  border-bottom-left-radius: 26rpx;
+  display: block;
+  color: #FFF;
+  font-size: 24rpx;
+  padding: 0 12rpx 0 22rpx;
+}

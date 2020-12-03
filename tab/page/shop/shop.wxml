@@ -1,0 +1,5 @@
+<view wx:for="{{list}}" wx:key="name" style="border-bottom:1px solid black;">
+  <view>{{item.name}}</view>
+  <view>{{item.price}}</view>
+  <view bindtap="delOrder" style="color:green;" data-index="{{index}}">删除</view>
+</view>

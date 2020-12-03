@@ -1,0 +1,68 @@
+<!--page/user.wxml-->
+<view class="content">
+  <!-- 头部信息 -->
+  <view class="manage_head">
+    <view class="head_user">
+      <view class="avatar">
+        <navigator class="external" url="">
+          <image class="pic" src="../images/banner1.jpg"></image>
+          <view class="photo_check array_check_3">
+            待审核
+          </view>
+        </navigator>
+      </view>
+      <view class="info">
+        <navigator class="external" url="">
+          <view class="nickname">
+            <view class="nickname_info">aaaaaaaaaaaaaaa</view>
+            <view class="info_sex">
+              <image src="../images/banner1.jpg" wx:if="{{userinfo.sex==0}}"></image>
+              <image src="../images/banner1.jpg" wx:if="{{userinfo.sex==1}}"></image>
+              <image src="../images/banner1.jpg" wx:if="{{userinfo.sex==2}}"></image>
+            </view>
+            <text> ID:637</text>
+          </view>
+        </navigator>
+        <view class="authbox">
+          <navigator class="arrow" url="">
+            <view class="auth_icon idcard">
+              <image src="../images/banner1.jpg"></image>
+            </view>
+            <view class="auth_icon mobile">
+              <image src="../images/banner1.jpg"></image>
+            </view>
+            <view class="auth_icon photo">
+              <image src="../images/banner1.jpg"></image>
+            </view>
+            <view class="auth_icon education">
+              <image src="../images/banner1.jpg"></image>
+            </view>
+            <view class="auth_icon work">
+              <image src="../images/banner1.jpg"></image>
+            </view>
+            <view class="auth_icon hause">
+              <image src="../images/banner1.jpg"></image>
+            </view>
+            <view class="auth_icon car">
+              <image src="../images/banner1.jpg"></image>
+            </view>
+          </navigator>
+        </view>
+        <view class="signature">
+          aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        </view>
+      </view>
+    </view>
+    <navigator class="switch" url="">我要当媒婆</navigator>
+  </view>
+  <!--  -->
+  <view>
+    <view class="handle-list">
+      <navigator url="" class="list-item">
+        <view class="left-icon"></view>
+        <view class="item-title"></view>
+        <view class="item-info"></view>
+      </navigator>
+    </view>
+  </view>
+</view>

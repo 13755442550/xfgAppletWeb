@@ -1,0 +1,141 @@
+<view class="content">
+  <!-- 轮播图 -->
+ <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}" 
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+        <block wx:for="{{background}}" wx:key="this">
+          <swiper-item>
+              <image src="{{item}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <!-- 置顶标题 -->
+  <view class="top">
+    <view class="top_title">
+      <view class="top_title_left">置顶推荐</view>
+      <view class="top_title_right">
+        <navigator url="/navigate/navigate?title=navigate" hover-class="navigator-hover">我要置顶 <mp-icon icon="add" color="black" size="{{25}}"></mp-icon>
+</navigator>
+      </view>
+    </view>
+  </view>
+  <!-- 置顶用户信息 -->
+  <view class="top_user">
+    <navigator wx:for="{{top_user}}" wx:key="top_user_id" url="{{item.top_user_url}}" hover-class="navigator-hover">
+    <view class="top_user_info">
+      <view class="top_user_logo">
+        <image src="{{item.top_user_logo}}"></image>
+      </view>
+      <view class="top_user_name">{{item.top_user_name}}</view>
+      <view class="top_user_age">
+        {{item.top_user_age}}·{{item.top_user_city}}
+      </view>
+      <view class="top_user_attention">{{item.top_user_attention}}关注</view>
+    </view>
+    </navigator>
+  
+    <!-- <navigator url="/navigate/navigate?title=navigate" hover-class="navigator-hover">
+    <view class="top_user_info">
+      <view class="top_user_logo">
+        <image src="../images/banner1.jpg"></image>
+      </view>
+      <view class="top_user_name">Scorpio</view>
+      <view class="top_user_age">
+        26岁·重庆
+      </view>
+      <view class="top_user_attention">50000关注</view>
+    </view>
+    </navigator> -->
+  
+  </view>
+  <!-- 专区推荐 -->
+  <view class="recommend">
+    <view class="recommend_border"></view>
+    <view class="recommend_text">专区推荐</view>
+    <view class="recommend_border"></view>
+  </view>
+  <!-- 专区推荐信息 -->
+  <view class="area_recommend">
+    <scroll-view class="area_recommend_scroll" scroll-x="true" bindscroll="scroll">
+      <navigator class="area_recommend_navigator" url="/navigate/navigate?title=navigate" hover-class="navigator-hover">
+        <view id="demo1" class="area_recommend_item">
+          <view class="area_recommend_text">优质推荐</view>
+          <image src="../images/banner1.jpg"></image>
+        </view>
+      </navigator>
+      <navigator class="area_recommend_navigator" url="/navigate/navigate?title=navigate" hover-class="navigator-hover">
+        <view id="demo2" class="area_recommend_item">
+          <view class="area_recommend_text">海归专区</view>
+          <image src="../images/banner1.jpg"></image>
+        </view>
+      </navigator>
+      <navigator class="area_recommend_navigator" url="/navigate/navigate?title=navigate" hover-class="navigator-hover" style="margin-right:20rpx">
+        <view id="demo3" class="area_recommend_item">
+          <view class="area_recommend_text">名校专区</view>
+          <image src="../images/banner1.jpg"></image>
+        </view>
+      </navigator>
+    </scroll-view>
+  </view>
+  <!-- 每日推荐 -->
+  <view class="recommend">
+    <view class="recommend_border"></view>
+    <view class="recommend_text">每日推荐</view>
+    <view class="recommend_border"></view>
+  </view>
+  <!-- 每日推荐用户信息 -->
+  <view class="page_recommend">
+    <view class="page_recommend_item" wx:for="{{page_recommend}}" wx:key="id">
+      <view class="page_recommend_top">
+        <view class="page_recommend_auth">已认证 {{item.page_recommend_auth}}</view>
+        <view class="page_recommend_image">
+          <image src="{{item.page_recommend_image}}"></image>
+        </view>
+        <view class="page_recommend_wx">查看微信</view>
+      </view>
+      <view class="page_recommend_line">
+        <view class="page_recommend_name">{{item.page_recommend_name}}</view>
+        <view class="page_recommend_expectation">期望{{item.page_recommend_expectation}}内结婚</view>
+      </view>
+      <view class="page_recommend_line">
+        <view class="page_recommend_title">
+          <view class="page_recommend_title_item" wx:for="{{item.page_recommend_title}}" wx:key="page_recommend_title">
+            {{item}}
+          </view>
+        </view>
+        <view class="page_recommend_city">{{item.page_recommend_city}}</view>
+      </view>
+      <view class="page_recommend_line">
+        <view class="page_recommend_info {{item.page_recommend_infobtnitem==true?'text_line':''}}">{{item.page_recommend_info}}</view>
+        <view class="page_recommend_infobtn" bindtap="infobtn" data-index="{{index}}">{{item.page_recommend_infobtnitem==true?"全文":"收起"}}</view>
+      </view>
+    </view>
+    <!-- <view class="page_recommend_item">
+      <view class="page_recommend_top">
+        <view class="page_recommend_auth">已认证{{}}·{{}}</view>
+        <view class="page_recommend_image">
+          <image src="../images/banner1.jpg"></image>
+        </view>
+        <view class="page_recommend_wx">查看微信</view>
+      </view>
+      <view class="page_recommend_line">
+        <view class="page_recommend_name">Fred</view>
+        <view class="page_recommend_expectation">期望{{}}内结婚</view>
+      </view>
+      <view class="page_recommend_line">
+        <view class="page_recommend_title">
+          <view class="page_recommend_title_item">30岁</view>
+        </view>
+        <view class="page_recommend_city">北京</view>
+      </view>
+      <view class="page_recommend_line">
+        <view class="page_recommend_info">我，北京男孩（110108），英国留学硕士研究生我，北京男孩（110108），英国留学硕士研究生</view>
+        <view class="page_recommend_infobtn">全文</view>
+      </view>
+    </view> -->
+  </view>
+
+</view>
