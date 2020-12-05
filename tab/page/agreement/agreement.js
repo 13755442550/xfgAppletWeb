@@ -1,4 +1,4 @@
-// page/agreement/agreement.js
+// page/agreement/agreement.js 幸福港协议
 Page({
 
   /**
