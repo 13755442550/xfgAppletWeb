@@ -1,8 +1,8 @@
 {
   "pages": [
+    "login/login",
     "regdata/regdata",
     "user/user",
-    "login/login",
     "index/index",
     "shop/shop",
     "agreement/agreement"
